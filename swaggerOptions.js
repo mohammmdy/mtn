@@ -9,52 +9,24 @@ const swaggerDefinition = {
   info: {
     title: "MTN API Documentation",
     version,
-    // description: "API documentation for the MTN project",
-    description:  `
-    ## How to Set Up and Run the Application
+    // description: "API documentation for the MTN project ",
+    description: `
 
-    Follow these steps to install and run the application locally:
 
-    ### 1. Installation
-    - Clone the repository:
-      \`\`\`bash
-      git clone https://github.com/your-repo-name.git
-      \`\`\`
-    - Navigate to the project folder:
-      \`\`\`bash
-      cd your-project-folder
-      \`\`\`
-    - Install dependencies:
-      \`\`\`bash
-      npm install
-      \`\`\`
+  ### INITIAL ADMIN ACCOUNT AND HIS PASSWORD TO LOGIN 🤗
+      -email          :  admin@example.com
+      -password       :  admin123
+   
 
-    ### 2. Environment Variables
-    - Create a \`.env\` file in the root directory.
-    - Add the following variables:
-      \`\`\`
-      PORT=8000
-      MONGO_URI=your_mongodb_connection_string
-      JWT_SECRET=your_jwt_secret
-      \`\`\`
+   ### INITIAL CUSTOMER ACCOUNT AND HIS PASSWORD TO LOGIN 🤗
+      -email          :  customer@example.com
+      -password       :  customer123
 
-    ### 3. Start the Server
-    - Run the server in development mode:
-      \`\`\`bash
-      npm run dev
-      \`\`\`
-    - The API will be available at:
-      \`\`\`
-      http://localhost:8000
-      \`\`\`
 
-    ### 4. Authentication
-    - Use the \`/api/login\` endpoint to get a JWT token.
-    - Add the token in Swagger UI using the **Authorize** button (top-right corner) with the Bearer scheme.
-
-    ---
-
-    This API allows you to manage orders with endpoints for creating, viewing, updating, and deleting orders.
+   ### !!! LOGIN RESPONSE GET THE ACCESS TOKEN AND REFRESH TOKEN 
+      -access token  use to auth with it
+      -refresh token use in the body of api REFRESH ACCESS TOKEN to get the new access token to auth with it
+ 
     `,
   },
   servers: [
